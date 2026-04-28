@@ -71,46 +71,73 @@
 
 <section id="timetable">
     <h2>전체 일정표</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>시간</th>
-                <th>구분</th>
-                <th>비고</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>12:30-13:20</td>
-                <td>등록 및 접수</td>
-                <td>2층 로비</td>
-            </tr>
-           <tr>
-    <td>13:30-15:10</td>
-    <td colspan="2">
-        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 10px;">
-            <!-- 1행: 1~4세션 -->
-            <div class="session-box"><a href="#s1">제1세션<br>(201호)</a></div>
-            <div class="session-box"><a href="#s2">제2세션<br>(202호)</a></div>
-            <div class="session-box"><a href="#s3">제3세션<br>(203호)</a></div>
-            <div class="session-box"><a href="#s4">제4세션<br>(204호)</a></div>
-            
-            <!-- 2행: 5~8세션 -->
-            <div class="session-box"><a href="#s5">제5세션<br>(401호)</a></div>
-            <div class="session-box"><a href="#s6">제6세션<br>(402호)</a></div>
-            <div class="session-box"><a href="#s7">제7세션<br>(403호)</a></div>
-            <div class="session-box"><a href="#s8">제8세션<br>(404호)</a></div>
-        </div>
-    </td>
-</tr>
-            <tr>
-                <td>17:20-18:00</td>
-                <td>정기총회 및 폐회</td>
-                <td>강당</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="timetable-wrapper">
+        <table class="program-table">
+            <thead>
+                <tr>
+                    <th style="width: 15%;">시간</th>
+                    <th colspan="8">프로그램 내용 (장소)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 등록 -->
+                <tr>
+                    <td>12:30 - 13:00</td>
+                    <td colspan="8" class="common-event">등 록</td>
+                </tr>
+                <!-- 개회식 & 기조연설 -->
+                <tr>
+                    <td>13:00 - 13:30</td>
+                    <td colspan="8" class="common-event">
+                        <strong>개회식 및 기조연설</strong> (S1533호)
+                    </td>
+                </tr>
+                <!-- 1차 세션 (8개 동시) -->
+                <tr class="session-row">
+                    <td>13:30 - 15:10</td>
+                    <td><a href="#s1">북한 도시공간<br>(S1533)</a></td>
+                    <td><a href="#s2">국토연구원<br>(S1539)</a></td>
+                    <td><a href="#s3">지방행정연구원<br>(S1633)</a></td>
+                    <td><a href="#s4">인구감소지역<br>(S1637)</a></td>
+                    <td><a href="#s5">강원연구원<br>(S1641)</a></td>
+                    <td><a href="#s6">고양연구원<br>(S1552)</a></td>
+                    <td><a href="#s7">섬진흥원<br>(S1209)</a></td>
+                    <td><a href="#s8">지역개발학회1<br>(S1250)</a></td>
+                </tr>
+                <!-- Break Time -->
+                <tr>
+                    <td>15:10 - 15:20</td>
+                    <td colspan="8" class="break-time">Break Time</td>
+                </tr>
+                <!-- 2차 세션 (8개 동시) -->
+                <tr class="session-row">
+                    <td>15:20 - 17:00</td>
+                    <td><a href="#s9">북한 사회변화<br>(S1533)</a></td>
+                    <td><a href="#s10">데이터 시각화<br>(S1539)</a></td>
+                    <td><a href="#s11">LH 토지주택<br>(S1633)</a></td>
+                    <td><a href="#s12">지역개발학회2<br>(S1637)</a></td>
+                    <td><a href="#s13">대학원 세션1<br>(S1641)</a></td>
+                    <td><a href="#s14">대학원 세션2<br>(S1552)</a></td>
+                    <td><a href="#s15">대학원 세션3<br>(S1209)</a></td>
+                    <td><a href="#s16">대학원 세션4<br>(S1250)</a></td>
+                </tr>
+                <!-- 안건논의 / 폐회식 -->
+                <tr>
+                    <td>17:00 - 17:30</td>
+                    <td colspan="8" class="common-event">
+                        <strong>안건논의 및 폐회식</strong> (S1533호)
+                    </td>
+                </tr>
+                <!-- 만찬 -->
+                <tr>
+                    <td>17:30 - </td>
+                    <td colspan="8" class="common-event" style="background:#fff9e6;">만 찬</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
+
 
 <section id="details">
     <h2>세션별 상세정보</h2>
