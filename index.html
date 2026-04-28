@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 한국지역개발학회 춘계학술대회</title>
+    <style>
+        /* 기본 스타일 및 부드러운 스크롤 */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Pretendard', sans-serif; line-height: 1.6; margin: 0; color: #333; }
+        
+        /* 헤더 & 네비게이션 */
+        header { position: fixed; top: 0; width: 100%; background: #fff; border-bottom: 1px solid #ddd; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 10px 20px; }
+        nav a { text-decoration: none; color: #333; font-weight: bold; margin-left: 20px; }
+
+        /* 메인 비주얼 (Hero) */
+        .hero { 
+            height: 60vh; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover; 
+            display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center;
+        }
+
+        /* 섹션 공통 */
+        section { max-width: 1000px; margin: 60px auto; padding: 20px; border-bottom: 1px dashed #eee; }
+        h2 { border-left: 5px solid #004a99; padding-left: 15px; color: #004a99; }
+
+        /* 타임테이블 표 */
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background: #f4f4f4; }
+        .session-link { color: #004a99; font-weight: bold; cursor: pointer; text-decoration: underline; }
+
+        /* 세션 상세 카드 */
+        .session-detail { background: #f9f9f9; padding: 20px; margin-bottom: 30px; border-radius: 8px; border: 1px solid #eee; }
+        .back-to-top { display: inline-block; margin-top: 10px; font-size: 0.9em; color: #888; text-decoration: none; }
+
+        /* 푸터 */
+        footer { background: #333; color: white; text-align: center; padding: 40px 20px; font-size: 0.9em; }
+    </style>
+</head>
+<body id="top">
+
+<header>
+    <nav>
+        <img src="logo.png" alt="학회로고" height="40">
+        <div>
+            <a href="#overview">대회개요</a>
+            <a href="#timetable">일정표</a>
+            <a href="#details">세션상세</a>
+            <a href="#venue">오시는길</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>2026 한국지역개발학회 춘계연합학술대회</h1>
+    <p>지역의 미래: 빅데이터 기반의 혁신전략</p>
+    <p>2026. 05. 22(금) | 명지대학교 종합관</p>
+</section>
+
+<section id="overview">
+    <h2>대회 개요</h2>
+    <p>본 학술대회는 전국의 지역개발 전문가들이 모여...</p>
+    <ul>
+        <li><strong>일시:</strong> 2026년 5월 22일 (금) 12:30 ~ 18:00</li>
+        <li><strong>장소:</strong> 명지대학교 종합관 2층, 4층</li>
+        <li><strong>주최:</strong> 한국지역개발학회, 명지대학교</li>
+    </ul>
+</section>
+
+<section id="timetable">
+    <h2>전체 일정표</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>시간</th>
+                <th>구분</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12:30-13:20</td>
+                <td>등록 및 접수</td>
+                <td>2층 로비</td>
+            </tr>
+            <tr>
+                <td>13:30-15:10</td>
+                <td>
+                    <a href="#s1" class="session-link">[제1세션] 빅데이터 기반 지역분석</a><br>
+                    <a href="#s2" class="session-link">[제2세션] 스마트도시와 거버넌스</a>
+                    <!-- 이런식으로 8개까지 추가 -->
+                </td>
+                <td>각 분과별 회의실</td>
+            </tr>
+            <tr>
+                <td>17:20-18:00</td>
+                <td>정기총회 및 폐회</td>
+                <td>강당</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="details">
+    <h2>세션별 상세정보</h2>
+
+    <!-- 제1세션 예시 -->
+    <div class="session-detail" id="s1">
+        <h3>[제1세션] 빅데이터 기반 지역분석 (13:30-15:10)</h3>
+        <p><strong>장소:</strong> 종합관 201호</p>
+        <ul>
+            <li><strong>발표1:</strong> 인공지능을 활용한 도시 쇠퇴 진단 (발표자: 홍길동 교수)</li>
+            <li><strong>발표2:</strong> 유동인구 데이터를 통한 상권 분석 (발표자: 김철수 박사)</li>
+            <li><strong>토론:</strong> 박영희(OO대), 이민수(연구원)</li>
+        </ul>
+        <a href="#timetable" class="back-to-top">↑ 일정표로 돌아가기</a>
+    </div>
+
+    <!-- 제2세션 예시 -->
+    <div class="session-detail" id="s2">
+        <h3>[제2세션] 스마트도시와 거버넌스 (13:30-15:10)</h3>
+        <p><strong>장소:</strong> 종합관 202호</p>
+        <p>내용 업데이트 중입니다...</p>
+        <a href="#timetable" class="back-to-top">↑ 일정표로 돌아가기</a>
+    </div>
+
+    <!-- 8세션까지 동일한 방식으로 id만 s3, s4...로 바꿔 추가하세요 -->
+</section>
+
+<section id="venue">
+    <h2>오시는 길</h2>
+    <p><strong>주소:</strong> 서울특별시 서대문구 거북골로 34 명지대학교 종합관</p>
+    <img src="map.jpg" alt="지도" style="width:100%; max-width:600px; border:1px solid #ddd;">
+</section>
+
+<footer>
+    <p>&copy; 2026 한국지역개발학회. All Rights Reserved.</p>
+    <p>문의: 02-xxx-xxxx | email@address.com</p>
+</footer>
+
+</body>
+</html>
