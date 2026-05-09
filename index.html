@@ -11,45 +11,39 @@
         
         /* 헤더 & 네비게이션 수정 */
         header { 
-        position: fixed; 
-        top: 0; 
-        width: 100%; 
-        background: #fff; 
-        border-bottom: 1px solid #ddd; 
-        z-index: 1000; 
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            background: #fff; 
+            border-bottom: 1px solid #ddd; 
+            z-index: 1000; 
         }
         
         nav { 
-        display: flex; 
-        justify-content: center; /* 로고가 없으므로 메뉴를 중앙으로 */
-        align-items: center; 
-        max-width: 1200px; 
-        margin: 0 auto; 
-        padding: 15px 20px; /* 위아래 여백을 조금 더 주어 시원하게 변경 */
+            display: flex; 
+            justify-content: center; /* 메뉴 전체를 화면 정중앙으로 */
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 15px 10px;    /* 모바일 배려하여 좌우 패딩 축소 */
         }
         
-        /* 메뉴를 감싸는 div 스타일 */
         nav div { 
-        display: flex; 
-        flex-wrap: wrap;      /* 중요: 모바일에서 화면이 좁으면 다음 줄로 넘어가게 함 */
-        justify-content: center; 
-        gap: 15px 30px;      /* 메뉴 사이 간격 (세로 15px, 가로 30px) */
+            display: flex; 
+            flex-wrap: wrap;        /* 화면 좁으면 줄바꿈 */
+            justify-content: center; 
+            gap: 10px 25px;        /* 메뉴 사이 간격 (세로 10px, 가로 25px) */
         }
         
         nav a { 
-        text-decoration: none; 
-        color: #333; 
-        font-weight: bold; 
-        font-size: 1.1rem;    /* 글자 크기를 살짝 키워 가독성 확보 */
-        margin: 0;            /* 기존 margin-left 삭제 (gap으로 조절) */
-        white-space: nowrap;  /* 메뉴 이름이 중간에 줄바꿈되지 않게 방지 */
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+            margin: 0;             /* 중요: 기존의 margin-left: 20px를 반드시 0으로! */
+            white-space: nowrap; 
+            font-size: 1rem;       /* 모바일에서도 적당한 크기 */
         }
-        
-        /* 모바일 전용 추가 수정 */
-        @media (max-width: 600px) {
-        nav { padding: 10px; }
-        nav a { font-size: 0.95rem; } /* 모바일에서는 글자 크기 살짝 축소 */
-        }
+
         /* 메인 비주얼 (Hero) */
         .hero { 
             height: 60vh; 
