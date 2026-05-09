@@ -10,6 +10,7 @@
         body { font-family: 'Pretendard', sans-serif; line-height: 1.6; margin: 0; color: #333; }
         
         /* 헤더 & 네비게이션 수정 */
+        /* 헤더 & 네비게이션 수정 */
         header { 
             position: fixed; 
             top: 0; 
@@ -19,31 +20,31 @@
             z-index: 1000; 
         }
         
-        nav { 
+        /* nav와 nav div 모두 중앙 정렬을 강제합니다 */
+        nav, nav div { 
             display: flex; 
-            justify-content: center; /* 메뉴 전체를 화면 정중앙으로 */
-            align-items: center; 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 15px 10px;    /* 모바일 배려하여 좌우 패딩 축소 */
-        }
-        
-        nav div { 
-            display: flex; 
-            flex-wrap: wrap;        /* 화면 좁으면 줄바꿈 */
             justify-content: center; 
-            gap: 10px 25px;        /* 메뉴 사이 간격 (세로 10px, 가로 25px) */
-            
+            align-items: center; 
+            width: 100%;       /* 전체 너비 확보 */
+            margin: 0 auto;    /* 외부 마진 초기화 */
+            padding: 10px 0;   /* 좌우 패딩을 0으로 만들어 쏠림 방지 */
         }
         
+        /* 메뉴 간의 간격 설정 */
+        nav div { 
+            flex-wrap: wrap; 
+            gap: 10px 25px;    /* 마진 대신 gap으로만 간격 조절 */
+        }
+        
+        /* 개별 메뉴 스타일 - 마진을 완전히 제거 */
         nav a { 
             text-decoration: none; 
             color: #333; 
             font-weight: bold; 
-            margin-left: 0;      /* 기존에 20px 있던 것을 0으로 반드시 수정! */
-            margin: 0;           /* 모든 방향 마진을 0으로 초기화 */
+            margin: 0 !important;   /* 어떤 마진도 허용하지 않음 */
+            padding: 5px 10px;      /* 클릭 영역 확보를 위한 내부 패딩 */
             white-space: nowrap; 
-            font-size: 1rem;       /* 모바일에서도 적당한 크기 */
+            font-size: 1rem;
         }
 
         /* 메인 비주얼 (Hero) */
