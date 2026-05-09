@@ -33,13 +33,15 @@
             flex-wrap: wrap;        /* 화면 좁으면 줄바꿈 */
             justify-content: center; 
             gap: 10px 25px;        /* 메뉴 사이 간격 (세로 10px, 가로 25px) */
+            
         }
         
         nav a { 
             text-decoration: none; 
             color: #333; 
             font-weight: bold; 
-            margin: 0;             /* 중요: 기존의 margin-left: 20px를 반드시 0으로! */
+            margin-left: 0;      /* 기존에 20px 있던 것을 0으로 반드시 수정! */
+            margin: 0;           /* 모든 방향 마진을 0으로 초기화 */
             white-space: nowrap; 
             font-size: 1rem;       /* 모바일에서도 적당한 크기 */
         }
